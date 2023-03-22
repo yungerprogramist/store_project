@@ -108,7 +108,7 @@ index
                     {% for page in products.paginator.page_range %}
 
                     <li class="page-item"><a class="page-link"
-                         href="{% url 'products:paginator' %} page">
+                         href="{% url 'products:paginator' page %}">
                          {{ page }}</a></li>
 
                     {% endfor %}
